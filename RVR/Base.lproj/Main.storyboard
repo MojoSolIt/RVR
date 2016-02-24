@@ -25,6 +25,10 @@
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
         </mutableArray>
         <mutableArray key="HelveticaNeueLights.ttc">
             <string>HelveticaNeue-Light</string>
@@ -806,7 +810,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYr-ct-HI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1257" y="285"/>
+            <point key="canvasLocation" x="2538" y="-1073"/>
         </scene>
         <!--BASIC INFO-->
         <scene sceneID="JkE-Zq-PbR">
@@ -929,7 +933,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vLe-5N-HJ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-121" y="-2021"/>
+            <point key="canvasLocation" x="-265" y="-2237"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="k92-Ln-6EI">
@@ -953,7 +957,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2dk-t8-foB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="315" y="-1974"/>
+            <point key="canvasLocation" x="263" y="-2306"/>
         </scene>
         <!--Sidebar View Controller-->
         <scene sceneID="2tC-DU-0LT">
@@ -963,6 +967,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="name" rowHeight="85" id="8gp-QD-Cs7">
@@ -983,8 +988,30 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="profile" rowHeight="70" id="JE1-bg-gJy">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="races" rowHeight="70" id="4pk-Fd-aM9">
                                 <rect key="frame" x="0.0" y="177" width="320" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4pk-Fd-aM9" id="hOG-Ir-qbB">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_races.png" translatesAutoresizingMaskIntoConstraints="NO" id="yMX-f5-l0a">
+                                            <rect key="frame" x="22" y="18" width="28" height="27"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Races" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X36-tH-qng">
+                                            <rect key="frame" x="77" y="17" width="120" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="cyY-Ee-Iha" kind="custom" identifier="show" customClass="SWRevealViewControllerSeguePushController" id="Dqb-1z-Oyb"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="profile" rowHeight="70" id="JE1-bg-gJy">
+                                <rect key="frame" x="0.0" y="247" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JE1-bg-gJy" id="dNb-di-lek">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
@@ -1006,7 +1033,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="settings" rowHeight="70" id="Y11-tE-4cY">
-                                <rect key="frame" x="0.0" y="247" width="320" height="70"/>
+                                <rect key="frame" x="0.0" y="317" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y11-tE-4cY" id="bU9-ay-jP4">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
@@ -1028,7 +1055,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="logout" rowHeight="70" id="o3y-Gc-wMv">
-                                <rect key="frame" x="0.0" y="317" width="320" height="70"/>
+                                <rect key="frame" x="0.0" y="387" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o3y-Gc-wMv" id="wIJ-Dg-d3p">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
@@ -1044,28 +1071,6 @@
                                             </state>
                                             <connections>
                                                 <action selector="Logout:" destination="nFC-Ht-3UH" eventType="touchUpInside" id="OPN-uB-hVq"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="races" rowHeight="70" id="4pk-Fd-aM9">
-                                <rect key="frame" x="0.0" y="387" width="320" height="70"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4pk-Fd-aM9" id="hOG-Ir-qbB">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_races.png" translatesAutoresizingMaskIntoConstraints="NO" id="yMX-f5-l0a">
-                                            <rect key="frame" x="22" y="18" width="28" height="27"/>
-                                        </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nir-qG-jbi">
-                                            <rect key="frame" x="46" y="18" width="119" height="31"/>
-                                            <state key="normal" title="Races">
-                                                <color key="titleColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="Logout:" destination="nFC-Ht-3UH" eventType="touchUpInside" id="sJ7-aR-6wv"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -1214,14 +1219,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="SETTING" id="x1A-iQ-Xnd">
-                        <barButtonItem key="leftBarButtonItem" image="icon_menu.png" id="iGt-9U-G5r">
+                        <barButtonItem key="leftBarButtonItem" image="homeicon.png" id="uOs-o6-vXu">
                             <color key="tintColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="lDh-MI-vKV" kind="show" id="PGS-CI-nWI"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="sidebarButton" destination="iGt-9U-G5r" id="q9R-5x-XvW"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DVe-kB-95d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1413,19 +1418,21 @@ Challenge Runs – Prize
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="PROFILE" id="iDu-GC-qVT">
-                        <barButtonItem key="leftBarButtonItem" image="icon_menu.png" id="aAq-QP-l6w">
+                        <barButtonItem key="leftBarButtonItem" image="homeicon.png" id="oVm-3z-Cb2">
                             <color key="tintColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="lDh-MI-vKV" kind="show" id="5Bv-KY-a9u"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="name" destination="mm6-qV-2Q2" id="QDK-64-M4w"/>
-                        <outlet property="sidebarButton" destination="aAq-QP-l6w" id="yJy-dc-3cY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cE-z9-GU7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1943" y="-970"/>
+            <point key="canvasLocation" x="1279" y="-1818"/>
         </scene>
         <!--Termsn Conditions View Controller-->
         <scene sceneID="9zF-yC-TyU">
@@ -1558,6 +1565,7 @@ Challenge Runs – Prize
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ohi-kT-JaX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.083674362299999999" green="0.1129813021" blue="0.27097645780000001" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1577,7 +1585,7 @@ Challenge Runs – Prize
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="i5r-mI-rqD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.067733252059999999" green="0.1098186771" blue="0.2559588639" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.083674362299999999" green="0.1129813021" blue="0.27097645780000001" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="0.0"/>
                             <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1591,7 +1599,7 @@ Challenge Runs – Prize
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPi-6I-qWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1365" y="-1130"/>
+            <point key="canvasLocation" x="853" y="-1818"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pec-VV-NDf">
@@ -1603,7 +1611,7 @@ Challenge Runs – Prize
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.067733252059999999" green="0.1098186771" blue="0.2559588639" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.083674362299999999" green="0.1129813021" blue="0.27097645780000001" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="textShadowColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1628,7 +1636,7 @@ Challenge Runs – Prize
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.067733252059999999" green="0.1098186771" blue="0.2559588639" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.083674362299999999" green="0.1129813021" blue="0.27097645780000001" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
                             <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1652,9 +1660,10 @@ Challenge Runs – Prize
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1uG-Jq-CxV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.14117647059999999" green="0.15686274510000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.083674362299999999" green="0.1129813021" blue="0.27097645780000001" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1666,6 +1675,132 @@ Challenge Runs – Prize
             </objects>
             <point key="canvasLocation" x="-2980" y="-2350"/>
         </scene>
+        <!--RACES-->
+        <scene sceneID="vNm-Zf-D8U">
+            <objects>
+                <viewController id="3fF-X0-VDb" customClass="RacesListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KdH-FY-UaE"/>
+                        <viewControllerLayoutGuide type="bottom" id="fI8-5s-SLs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f3y-EU-81z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="94" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="omi-Tz-0cR">
+                                <rect key="frame" x="0.0" y="33" width="320" height="535"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="94" id="Ecb-Jk-IiR" userLabel="RacesListCellTableViewCell" customClass="RacesListCellTableViewCell">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="94"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ecb-Jk-IiR" id="1KQ-40-gYl">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Races Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaq-gR-cUP">
+                                                    <rect key="frame" x="11" y="-4" width="180" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skj-4X-Pad">
+                                                    <rect key="frame" x="11" y="18" width="302" height="41"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwi-2d-P5m">
+                                                    <rect key="frame" x="11" y="69" width="93" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="End date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJW-V6-g5e">
+                                                    <rect key="frame" x="93" y="69" width="91" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Days Left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T91-6f-vOS">
+                                                    <rect key="frame" x="236" y="70" width="84" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="Description" destination="Skj-4X-Pad" id="Wi3-8U-QcY"/>
+                                            <outlet property="Name" destination="gaq-gR-cUP" id="pg2-CL-uHv"/>
+                                            <outlet property="end_date" destination="cJW-V6-g5e" id="YAn-bp-Tom"/>
+                                            <outlet property="remaing_days" destination="T91-6f-vOS" id="vzJ-yb-BUW"/>
+                                            <outlet property="start_date" destination="bwi-2d-P5m" id="C26-mb-MuL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3fF-X0-VDb" id="4ji-8i-5oz"/>
+                                    <outlet property="delegate" destination="3fF-X0-VDb" id="HPQ-xp-HCR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="RACES" id="Zf0-lV-eHh">
+                        <barButtonItem key="leftBarButtonItem" image="homeicon.png" id="tGc-Uz-hFW">
+                            <color key="tintColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="lDh-MI-vKV" kind="showDetail" action="showViewController:sender:" id="Qvr-uy-sfi"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="icon_activity.png" id="Cxu-QM-yps">
+                            <color key="tintColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="VjR-Ua-iUQ" kind="show" id="V3Y-7d-3T2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="RaceslistTableView" destination="omi-Tz-0cR" id="88K-Uw-Flo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PnH-Mz-jhc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1968" y="-1065"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vaz-AP-tsi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cyY-Ee-Iha" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1cS-Ur-5Ft">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.083674362299999999" green="0.1129813021" blue="0.27097645780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3fF-X0-VDb" kind="relationship" relationship="rootViewController" id="IS9-m3-P9N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRK-Gv-uvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1371" y="-1065"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bg.jpg" width="750" height="1334"/>
@@ -1674,6 +1809,7 @@ Challenge Runs – Prize
         <image name="btn_privacy.png" width="313" height="84"/>
         <image name="btn_signup.png" width="675" height="76"/>
         <image name="btn_terms.png" width="313" height="84"/>
+        <image name="homeicon.png" width="22" height="22"/>
         <image name="icon_activity.png" width="21" height="17"/>
         <image name="icon_activity_profile.png" width="35" height="39"/>
         <image name="icon_badges.png" width="49" height="61"/>
@@ -1695,10 +1831,10 @@ Challenge Runs – Prize
         <image name="skip2.png" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Gwe-vX-U2b"/>
         <segue reference="nL3-ce-D5A"/>
+        <segue reference="Gwe-vX-U2b"/>
         <segue reference="cfL-mO-gG2"/>
-        <segue reference="uGg-8j-n5r"/>
+        <segue reference="Qvr-uy-sfi"/>
         <segue reference="Rz7-Vh-LG8"/>
     </inferredMetricsTieBreakers>
 </document>
