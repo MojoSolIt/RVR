@@ -7,18 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UIDownPicker.h>
+
 
 //#import <DownPicker/DownPicker.h>
 
 //#import <DownPicker 5.56.22 AM/>
 
-@interface BasicInfoViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface BasicInfoViewController : UIViewController
 
 
-@property (weak, nonatomic) IBOutlet UIButton *selectGender;
-@property (weak, nonatomic) IBOutlet UITableView *genderDropDown;
-@property(copy, nonatomic)NSArray *genderData;
-- (IBAction)selectGenderAction:(id)sender;
 
+
+
+@property (weak, nonatomic) IBOutlet UITextField *distancetxtField;
+@property (weak, nonatomic) IBOutlet UITextField *gendertxtField;
+@property (weak, nonatomic) IBOutlet UITextField *agetxtField;
+
+
+@property (nonatomic) DownPicker *distancePicker;
+@property (nonatomic) DownPicker *genderPicker;
+@property (nonatomic) DownPicker *agePicker;
+- (IBAction)saveMyInfo:(id)sender;
 
 @end

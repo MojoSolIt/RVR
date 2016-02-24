@@ -121,6 +121,14 @@
 		82D9CA6D1C6E42E7004AF07C /* MultiColorPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D9CA631C6E42E7004AF07C /* MultiColorPolyline.m */; };
 		82D9CA6E1C6E42E7004AF07C /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D9CA651C6E42E7004AF07C /* Run.m */; };
 		82D9CA771C6E77B3004AF07C /* RVR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82D9CA751C6E77B3004AF07C /* RVR.xcdatamodeld */; };
+		A81B558E1C7E1C4F0084677E /* skip1.png in Resources */ = {isa = PBXBuildFile; fileRef = A81B558C1C7E1C4F0084677E /* skip1.png */; };
+		A81B558F1C7E1C4F0084677E /* skip2.png in Resources */ = {isa = PBXBuildFile; fileRef = A81B558D1C7E1C4F0084677E /* skip2.png */; };
+		A81B559A1C7E291F0084677E /* downArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A81B55911C7E291E0084677E /* downArrow.png */; };
+		A81B559B1C7E291F0084677E /* downArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A81B55921C7E291E0084677E /* downArrow@2x.png */; };
+		A81B559C1C7E291F0084677E /* downArrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A81B55931C7E291E0084677E /* downArrow@3x.png */; };
+		A81B559D1C7E291F0084677E /* DownPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A81B55951C7E291F0084677E /* DownPicker.m */; };
+		A81B559E1C7E291F0084677E /* DownPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A81B55971C7E291F0084677E /* DownPickerViewController.m */; };
+		A81B559F1C7E291F0084677E /* UIDownPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A81B55991C7E291F0084677E /* UIDownPicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -306,6 +314,17 @@
 		82D9CA641C6E42E7004AF07C /* Run.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Run.h; path = Runner/Run.h; sourceTree = "<group>"; };
 		82D9CA651C6E42E7004AF07C /* Run.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Run.m; path = Runner/Run.m; sourceTree = "<group>"; };
 		82D9CA761C6E77B3004AF07C /* RVR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RVR.xcdatamodel; sourceTree = "<group>"; };
+		A81B558C1C7E1C4F0084677E /* skip1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skip1.png; sourceTree = "<group>"; };
+		A81B558D1C7E1C4F0084677E /* skip2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skip2.png; sourceTree = "<group>"; };
+		A81B55911C7E291E0084677E /* downArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = downArrow.png; path = Picker/downArrow.png; sourceTree = "<group>"; };
+		A81B55921C7E291E0084677E /* downArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "downArrow@2x.png"; path = "Picker/downArrow@2x.png"; sourceTree = "<group>"; };
+		A81B55931C7E291E0084677E /* downArrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "downArrow@3x.png"; path = "Picker/downArrow@3x.png"; sourceTree = "<group>"; };
+		A81B55941C7E291E0084677E /* DownPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownPicker.h; path = Picker/DownPicker.h; sourceTree = "<group>"; };
+		A81B55951C7E291F0084677E /* DownPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DownPicker.m; path = Picker/DownPicker.m; sourceTree = "<group>"; };
+		A81B55961C7E291F0084677E /* DownPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownPickerViewController.h; path = Picker/DownPickerViewController.h; sourceTree = "<group>"; };
+		A81B55971C7E291F0084677E /* DownPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DownPickerViewController.m; path = Picker/DownPickerViewController.m; sourceTree = "<group>"; };
+		A81B55981C7E291F0084677E /* UIDownPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIDownPicker.h; path = Picker/UIDownPicker.h; sourceTree = "<group>"; };
+		A81B55991C7E291F0084677E /* UIDownPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIDownPicker.m; path = Picker/UIDownPicker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -367,6 +386,7 @@
 		829D6B791C62AD51009E5FDF /* RVR */ = {
 			isa = PBXGroup;
 			children = (
+				A81B55901C7E26660084677E /* Picker */,
 				82D4D7651C650A3900547057 /* SideBar */,
 				829D6C6D1C62B752009E5FDF /* Resources */,
 				82D18BC31C6D5273006BDB41 /* ViewControllers */,
@@ -410,6 +430,8 @@
 		829D6C6D1C62B752009E5FDF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A81B558C1C7E1C4F0084677E /* skip1.png */,
+				A81B558D1C7E1C4F0084677E /* skip2.png */,
 				829D6C6E1C62B764009E5FDF /* 01.jpg */,
 				829D6C6F1C62B764009E5FDF /* 02.jpg */,
 				829D6C701C62B764009E5FDF /* 03.jpg */,
@@ -627,6 +649,23 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		A81B55901C7E26660084677E /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				A81B55911C7E291E0084677E /* downArrow.png */,
+				A81B55921C7E291E0084677E /* downArrow@2x.png */,
+				A81B55931C7E291E0084677E /* downArrow@3x.png */,
+				A81B55941C7E291E0084677E /* DownPicker.h */,
+				A81B55951C7E291F0084677E /* DownPicker.m */,
+				A81B55961C7E291F0084677E /* DownPickerViewController.h */,
+				A81B55971C7E291F0084677E /* DownPickerViewController.m */,
+				A81B55981C7E291F0084677E /* UIDownPicker.h */,
+				A81B55991C7E291F0084677E /* UIDownPicker.m */,
+			);
+			name = Picker;
+			path = ..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -764,6 +803,7 @@
 				829D6CD01C62B764009E5FDF /* icon_prize.png in Resources */,
 				829D6CDC1C62B764009E5FDF /* menu_home@3x.png in Resources */,
 				829D6CAA1C62B764009E5FDF /* 04-1.jpg in Resources */,
+				A81B559A1C7E291F0084677E /* downArrow.png in Resources */,
 				829D6CB91C62B764009E5FDF /* btn_info.png in Resources */,
 				829D6CBE1C62B764009E5FDF /* btn_pause.png in Resources */,
 				82C236AB1C76913800F6F237 /* Info.plist in Resources */,
@@ -773,11 +813,14 @@
 				829D6CBB1C62B764009E5FDF /* btn_login.png in Resources */,
 				829D6CB71C62B764009E5FDF /* bg.jpg in Resources */,
 				829D6CB31C62B764009E5FDF /* 12.jpg in Resources */,
+				A81B559B1C7E291F0084677E /* downArrow@2x.png in Resources */,
+				A81B558F1C7E1C4F0084677E /* skip2.png in Resources */,
 				829D6CC51C62B764009E5FDF /* gps_btn_active.png in Resources */,
 				829D6CD31C62B764009E5FDF /* icon_records.png in Resources */,
 				829D6CD81C62B764009E5FDF /* logo_header.png in Resources */,
 				829D6CC11C62B764009E5FDF /* btn_signup.png in Resources */,
 				829D6CAE1C62B764009E5FDF /* 07.jpg in Resources */,
+				A81B559C1C7E291F0084677E /* downArrow@3x.png in Resources */,
 				829D6CCB1C62B764009E5FDF /* icon_badges.png in Resources */,
 				829D6CC71C62B764009E5FDF /* helvetica-neue-bold.ttf in Resources */,
 				829D6CD91C62B764009E5FDF /* logo_login.png in Resources */,
@@ -791,6 +834,7 @@
 				829D6CC61C62B764009E5FDF /* gps_btn.png in Resources */,
 				829D6CDB1C62B764009E5FDF /* map_point@2x.png in Resources */,
 				829D6CC01C62B764009E5FDF /* btn_signup_email.png in Resources */,
+				A81B558E1C7E1C4F0084677E /* skip1.png in Resources */,
 				829D6B8A1C62AD51009E5FDF /* LaunchScreen.storyboard in Resources */,
 				829D6B871C62AD51009E5FDF /* Assets.xcassets in Resources */,
 				829D6CA71C62B764009E5FDF /* 01.jpg in Resources */,
@@ -825,6 +869,7 @@
 				82C236A81C76913800F6F237 /* AFURLRequestSerialization.m in Sources */,
 				82C236B11C76913800F6F237 /* UIImageView+AFNetworking.m in Sources */,
 				82D4D7741C653AE600547057 /* SettingsTableViewController.m in Sources */,
+				A81B559F1C7E291F0084677E /* UIDownPicker.m in Sources */,
 				82D18B861C6CF3FC006BDB41 /* MZTimerLabel.m in Sources */,
 				82D9CA771C6E77B3004AF07C /* RVR.xcdatamodeld in Sources */,
 				82D9CA691C6E42E7004AF07C /* BadgeEarnedStatus.m in Sources */,
@@ -836,6 +881,7 @@
 				82C236B01C76913800F6F237 /* UIButton+AFNetworking.m in Sources */,
 				829D6CE81C62C94C009E5FDF /* TermsnConditionsViewController.m in Sources */,
 				82C236AF1C76913800F6F237 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				A81B559E1C7E291F0084677E /* DownPickerViewController.m in Sources */,
 				829D6B7F1C62AD51009E5FDF /* AppDelegate.m in Sources */,
 				82D9CA6E1C6E42E7004AF07C /* Run.m in Sources */,
 				82D9CA6D1C6E42E7004AF07C /* MultiColorPolyline.m in Sources */,
@@ -850,6 +896,7 @@
 				829D6CE51C62C930009E5FDF /* PrivacyViewController.m in Sources */,
 				829D6CE21C62BBC0009E5FDF /* HomeViewController.m in Sources */,
 				82C236A61C76913800F6F237 /* AFNetworkReachabilityManager.m in Sources */,
+				A81B559D1C7E291F0084677E /* DownPicker.m in Sources */,
 				82D9CA661C6E42E7004AF07C /* Badge.m in Sources */,
 				82C236A51C76913800F6F237 /* AFHTTPSessionManager.m in Sources */,
 				829D6CEE1C62D3A3009E5FDF /* RacesViewController.m in Sources */,

@@ -9,7 +9,7 @@
 #import "BasicInfoViewController.h"
 
 @interface BasicInfoViewController ()
-@property (weak, nonatomic) IBOutlet UIView *genderView;
+
 
 @end
 
@@ -17,14 +17,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+ 
     
     
-    self.genderData = [[NSArray alloc]initWithObjects:@"Male",@"Female", nil];
+    NSArray *distanceUnit = @[@"Miles", @"Kilo Meters"];
+    self.distancePicker = [[DownPicker alloc] initWithTextField:self.distancetxtField withData:distanceUnit];
     
-    self.genderDropDown.delegate=self;
-    self.genderDropDown.dataSource=self;
-    self.genderDropDown.hidden=YES;
+    NSArray *gender = @[@"Male", @"Female"];
+    self.genderPicker = [[DownPicker alloc] initWithTextField:self.gendertxtField withData:gender];
+
+    
+    
+    NSArray *ageArray = @[@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23",@"24",@"25",@"26",@"27",@"28",@"29",@"30",@"31",@"32",@"33",@"34",@"35",@"36",@"37",@"38",@"39",@"40",@"41",@"42",@"43",@"44",@"45",@"46",@"47",@"48",@"49",@"50",@"51",@"52",@"53",@"54",@"55",@"56",@"57",@"58",@"59",@"60",@"61",@"62",@"63",@"64",@"65",@"66",@"67",@"68",@"69",@"70",@"71",@"72",@"73",@"74",@"75",@"76",@"77",@"78",@"79",@"80",@"81",@"82",@"83",@"84",@"85",@"86",@"87",@"88",@"89",@"90",@"91",@"92",@"93",@"94",@"95",@"96",@"97",@"98",@"99",@"100"];
+    
+    self.agePicker = [[DownPicker alloc] initWithTextField:self.agetxtField withData:ageArray];
+    
     
 }
 
@@ -40,99 +47,52 @@
     [super viewWillAppear:YES];
     
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-//
-//- (IBAction)distanceUnit:(id)sender
-//{
-//    NSArray *distanceUnit = @[@"name",@"logout"];
-//    [sender distanceUnit:self];
-//}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-
+- (IBAction)saveMyInfo:(id)sender
 {
-    // Return the number of rows in the section.
-    return self.genderData.count;
-}
-
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *simpleTableIdentifier =@"simpleTableIdentifier";
-    UITableViewCell *cell;
     
-    if (cell==nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
-    }
-
-    cell.textLabel.text = self.genderData[indexPath.row];
-    return cell;
-    
-
-}
-
-
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-
-{
-    UITableViewCell *cell = [self.genderDropDown cellForRowAtIndexPath:indexPath];
-    [self.selectGender setTitle:cell.textLabel.text forState:UIControlStateNormal];
-    
-    
-    self.genderDropDown.hidden=YES;
-}
-
-
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return indexPath.row;
-}
-
-
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-
-//
-//{
-//    NSString *CellIdentifier = [menuItems objectAtIndex:indexPath.row];
-//    
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-//    cell.backgroundColor  = [UIColor clearColor];
-//    cell.textLabel.textColor = [UIColor orangeColor];
-//    
-//    if ([CellIdentifier isEqualToString:@"fullname"])
-//    {
-//        cell = [tableView dequeueReusableCellWithIdentifier:[menuItems objectAtIndex:0]];
-//        
-//        cell.backgroundColor  = [UIColor clearColor];
-//
-//        
-//    }
-//    return cell;
-//}
-
-
-
-
-- (IBAction)selectGenderAction:(id)sender
-{
-    if (self.genderDropDown.hidden==YES)
+    if ([self.gendertxtField.text  isEqual:@""])
     {
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Gender not selected"
+                                                                       message:@"Please select a gender "
+                                                                preferredStyle:UIAlertControllerStyleAlert];
         
-        self.genderDropDown.hidden=NO;
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
     }
-    else
+    
+    
+    
+    else if ([self.distancetxtField.text  isEqual:@""])
     {
-        self.genderDropDown.hidden=YES;
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Distance Unit not selected"
+                                                                       message:@"Please select a distance unit "
+                                                                preferredStyle:UIAlertControllerStyleAlert];
         
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
         
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
     }
+    else if ([self.agetxtField.text  isEqual:@""])
+    {
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Age not selected"
+                                                                       message:@"Please select age "
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {}];
+        
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+    
+    
+    [self performSegueWithIdentifier:@"gototabview" sender:self];
 }
 @end

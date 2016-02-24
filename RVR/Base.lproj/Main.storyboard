@@ -821,27 +821,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ije-im-hzp">
-                                <rect key="frame" x="-17" y="0.0" width="339" height="568"/>
+                                <rect key="frame" x="-19" y="0.0" width="339" height="568"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dpi-WI-DCz">
-                                <rect key="frame" x="0.0" y="299" width="320" height="56"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ4-x4-9Iy">
-                                        <rect key="frame" x="8" y="0.0" width="35" height="30"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                        <state key="normal" title="Age">
-                                            <color key="titleColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fw6-Uv-lA4">
-                                        <rect key="frame" x="11" y="25" width="101" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.2274509804" green="0.25098039220000001" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lup-oC-J3F">
                                 <rect key="frame" x="0.0" y="185" width="320" height="56"/>
                                 <subviews>
@@ -852,12 +833,13 @@
                                             <color key="titleColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VM9-tH-PIf">
-                                        <rect key="frame" x="11" y="25" width="95" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Miles" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IBC-Pd-kTb" customClass="UIDownPicker">
+                                        <rect key="frame" x="10" y="19" width="310" height="37"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.22745098039215686" green="0.25098039215686274" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -879,13 +861,6 @@
                                 <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IM-kH-wIJ">
-                                <rect key="frame" x="15" y="365" width="290" height="33"/>
-                                <state key="normal" backgroundImage="btn_info.png"/>
-                                <connections>
-                                    <segue destination="lDh-MI-vKV" kind="modal" id="R8P-qn-JcM"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8un-cZ-fMO">
                                 <rect key="frame" x="0.0" y="242" width="320" height="56"/>
                                 <subviews>
@@ -895,33 +870,49 @@
                                         <state key="normal" title="Gender">
                                             <color key="titleColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="selectGenderAction:" destination="cYu-eG-ecR" eventType="touchUpInside" id="oke-B0-EN9"/>
-                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Aw-47-vPn">
-                                        <rect key="frame" x="10" y="25" width="97" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Male" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h0a-Ub-0tE" customClass="UIDownPicker">
+                                        <rect key="frame" x="10" y="19" width="310" height="37"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vtK-4l-zlL">
-                                        <rect key="frame" x="0.0" y="55" width="320" height="100"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <outlet property="dataSource" destination="cYu-eG-ecR" id="2VA-tc-dPU"/>
-                                            <outlet property="delegate" destination="cYu-eG-ecR" id="pYT-1d-CjB"/>
-                                        </connections>
-                                    </tableView>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.2274509804" green="0.25098039220000001" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dpi-WI-DCz">
+                                <rect key="frame" x="0.0" y="299" width="320" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ4-x4-9Iy">
+                                        <rect key="frame" x="8" y="0.0" width="35" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Age">
+                                            <color key="titleColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="25" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OsX-DI-gZH" customClass="UIDownPicker">
+                                        <rect key="frame" x="10" y="19" width="310" height="37"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2274509804" green="0.25098039220000001" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IM-kH-wIJ">
+                                <rect key="frame" x="15" y="363" width="290" height="33"/>
+                                <state key="normal" backgroundImage="btn_info.png"/>
+                                <connections>
+                                    <action selector="saveMyInfo:" destination="cYu-eG-ecR" eventType="touchUpInside" id="yUv-8b-WGt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="BASIC INFO" id="2MN-gW-1ic">
-                        <barButtonItem key="rightBarButtonItem" title="SKIP" id="V99-6X-YqK">
+                        <barButtonItem key="rightBarButtonItem" image="skip2.png" id="V99-6X-YqK">
                             <color key="tintColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="lDh-MI-vKV" kind="modal" id="KNB-nf-c34"/>
@@ -930,14 +921,15 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="genderDropDown" destination="vtK-4l-zlL" id="oXD-7j-AfZ"/>
-                        <outlet property="genderView" destination="8un-cZ-fMO" id="YyJ-uq-jk6"/>
-                        <outlet property="selectGender" destination="vZD-wY-OMa" id="fbk-Ga-mJB"/>
+                        <outlet property="agetxtField" destination="OsX-DI-gZH" id="Iq9-3g-eu8"/>
+                        <outlet property="distancetxtField" destination="IBC-Pd-kTb" id="o4w-GM-syd"/>
+                        <outlet property="gendertxtField" destination="h0a-Ub-0tE" id="vS4-ez-5z8"/>
+                        <segue destination="lDh-MI-vKV" kind="modal" identifier="gototabview" id="uGg-8j-n5r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vLe-5N-HJ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-161" y="-1935"/>
+            <point key="canvasLocation" x="-121" y="-2021"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="k92-Ln-6EI">
@@ -1700,12 +1692,13 @@ Challenge Runs – Prize
         <image name="menu_home.png" width="33" height="33"/>
         <image name="menu_leadership.png" width="24" height="20"/>
         <image name="menu_trophy.png" width="24" height="20"/>
+        <image name="skip2.png" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Gwe-vX-U2b"/>
-        <segue reference="zgp-Oi-Aft"/>
-        <segue reference="ePc-9f-ZsR"/>
-        <segue reference="R8P-qn-JcM"/>
+        <segue reference="nL3-ce-D5A"/>
+        <segue reference="cfL-mO-gG2"/>
+        <segue reference="uGg-8j-n5r"/>
         <segue reference="Rz7-Vh-LG8"/>
     </inferredMetricsTieBreakers>
 </document>
