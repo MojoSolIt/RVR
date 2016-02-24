@@ -9,6 +9,7 @@
 #import "BasicInfoViewController.h"
 
 @interface BasicInfoViewController ()
+@property (weak, nonatomic) IBOutlet UIView *genderView;
 
 @end
 
@@ -19,19 +20,12 @@
     // Do any additional setup after loading the view.
     
     
+    self.genderData = [[NSArray alloc]initWithObjects:@"Male",@"Female", nil];
     
-//    NSArray *el = @[@"Miles.", @"Kilometer"];
-//    self.picker = [[DownPicker alloc] initWithTextField:self.textField withData:el];
-//    
-//    NSArray *el2 = @[@"Male", @"Female"];
-//    self.picker2 = [[DownPicker alloc] initWithTextField:self.textField2 withData:el2];
-//    
-//    NSArray *el3 = @[@"15",@"16",@"17",@"18",@"19",@"20"];
-//    
-//    (void)[self.downPicker initWithData:el3];
-//    
-//    NSArray *el4 = @[@"Dream Theater", @"Stratovarius", @"Tool", @"A Perfect Circle", @"Shadow Gallery"];
-//    (void)[self.downPicker2 initWithData:el4];
+    self.genderDropDown.delegate=self;
+    self.genderDropDown.dataSource=self;
+    self.genderDropDown.hidden=YES;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,8 +38,6 @@
     
     
     [super viewWillAppear:YES];
-    
-   
     
 }
 /*
@@ -63,4 +55,84 @@
 //    NSArray *distanceUnit = @[@"name",@"logout"];
 //    [sender distanceUnit:self];
 //}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+
+{
+    // Return the number of rows in the section.
+    return self.genderData.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier =@"simpleTableIdentifier";
+    UITableViewCell *cell;
+    
+    if (cell==nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+
+    cell.textLabel.text = self.genderData[indexPath.row];
+    return cell;
+    
+
+}
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+
+{
+    UITableViewCell *cell = [self.genderDropDown cellForRowAtIndexPath:indexPath];
+    [self.selectGender setTitle:cell.textLabel.text forState:UIControlStateNormal];
+    
+    
+    self.genderDropDown.hidden=YES;
+}
+
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return indexPath.row;
+}
+
+
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+
+//
+//{
+//    NSString *CellIdentifier = [menuItems objectAtIndex:indexPath.row];
+//    
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+//    cell.backgroundColor  = [UIColor clearColor];
+//    cell.textLabel.textColor = [UIColor orangeColor];
+//    
+//    if ([CellIdentifier isEqualToString:@"fullname"])
+//    {
+//        cell = [tableView dequeueReusableCellWithIdentifier:[menuItems objectAtIndex:0]];
+//        
+//        cell.backgroundColor  = [UIColor clearColor];
+//
+//        
+//    }
+//    return cell;
+//}
+
+
+
+
+- (IBAction)selectGenderAction:(id)sender
+{
+    if (self.genderDropDown.hidden==YES)
+    {
+        
+        self.genderDropDown.hidden=NO;
+    }
+    else
+    {
+        self.genderDropDown.hidden=YES;
+        
+        
+    }
+}
 @end

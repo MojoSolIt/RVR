@@ -23,6 +23,8 @@
 
 {
     NSArray *menuItems;
+   // NSString *userName;
+    
 }
 
 
@@ -79,53 +81,104 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 
+
 {
     NSString *CellIdentifier = [menuItems objectAtIndex:indexPath.row];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    cell.backgroundColor = cell.contentView.backgroundColor;
     
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    cell.backgroundColor  = [UIColor clearColor];
+    cell.textLabel.textColor = [UIColor orangeColor];
     
     if ([CellIdentifier isEqualToString:@"fullname"])
     {
         cell = [tableView dequeueReusableCellWithIdentifier:[menuItems objectAtIndex:0]];
-   
+        
+        cell.backgroundColor  = [UIColor clearColor];
         NSUserDefaults *prefrecense = [NSUserDefaults standardUserDefaults];
         
-        self.userName = [prefrecense stringForKey:@"name"];
-       // self.userPicture = [prefrecense stringForKey:@"picture"];
-       // self.userNameLabel.text = self.userName;
-   
-        
-        
+        self.userName = [prefrecense  stringForKey:@"name"];
+  
         cell.textLabel.text = @"Full Name";
-        //cell.textLabel.textColor = [UIColor colorWithHue:.255 saturation:.267 brightness:1.0 alpha:0.1];
-        cell.detailTextLabel.textColor = [ UIColor colorWithHue:.255 saturation:.267 brightness:1.0 alpha:0.1];
         cell.detailTextLabel.text = self.userName;
-        cell.textLabel.textColor = [UIColor orangeColor];
-        //cell.textLabel.textAlignment = [];
+
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    return cell;
+}
+
+
+//{
+//    NSString *CellIdentifier = [menuItems objectAtIndex:indexPath.row];
+//
+//    
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+//    
+//    UITableViewCell *cell1;
+//    UITableViewCell *cell2;
+//    
+//    //cell.backgroundColor = cell.contentView.backgroundColor;
+//    
+//    
+//    
+//    if ([CellIdentifier isEqualToString:@"fullname"])
+//    {
 //        
-//        NSURL *url = [NSURL URLWithString:self.userPicture];
 //        
-//        NSData *data = [NSMutableData dataWithContentsOfURL:url];
-//        UIImage *image = [UIImage imageWithData:data];
+//        cell1= [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:[menuItems objectAtIndex:0]];
+//       
+//   
+//        NSUserDefaults *prefrecense = [NSUserDefaults standardUserDefaults];
+//        
+//    self.userName = [prefrecense stringForKey:@"name"];
+//       // self.userPicture = [prefrecense stringForKey:@"picture"];
+//       // self.userNameLabel.text = self.userName;
+//   cell1.backgroundColor = cell1.contentView.backgroundColor;
 //        
 //        
+//        cell1.textLabel.text = @"Full Name";
+//        //cell.textLabel.textColor = [UIColor colorWithHue:.255 saturation:.267 brightness:1.0 alpha:0.1];
+//        //cell.detailTextLabel.textColor = [ UIColor colorWithHue:.255 saturation:.267 brightness:1.0 alpha:0.1];
+//        cell1.detailTextLabel.text = self.userName;
+//        //cell.textLabel.textColor = [UIColor orangeColor];
+//        //cell.textLabel.textAlignment = [];
 //        
-//        cell.imageView.layer.cornerRadius = cell.imageView.frame.size.width / 2;
-//        cell.imageView.clipsToBounds = YES;
-//        cell.imageView.layer.borderWidth = 1.0f;
-//        cell.imageView.layer.cornerRadius = 40.0f;
-//        cell.imageView.layer.borderColor = [UIColor whiteColor].CGColor;
 //        
-//        cell.imageView.image = image;
+//        //return cell1;
+////
+////        NSURL *url = [NSURL URLWithString:self.userPicture];
+////        
+////        NSData *data = [NSMutableData dataWithContentsOfURL:url];
+////        UIImage *image = [UIImage imageWithData:data];
+////
+////        
+////        
+////        cell.imageView.layer.cornerRadius = cell.imageView.frame.size.width / 2;
+////        cell.imageView.clipsToBounds = YES;
+////        cell.imageView.layer.borderWidth = 1.0f;
+////        cell.imageView.layer.cornerRadius = 40.0f;
+////        cell.imageView.layer.borderColor = [UIColor whiteColor].CGColor;
+////        
+////        cell.imageView.image = image;
+//
+//    
+//        return cell1;
 
     
     
     
-    }
     
     
     
@@ -145,10 +198,7 @@
     
     
     
-    
-    
-    return cell;
-}
+
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 
