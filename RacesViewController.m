@@ -311,11 +311,15 @@ bool Miles=false,GPSenable=false,StartRun=false;
     
     [timer4 pause];
     
+    
+    
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"RUN VIRTUAL RACES" delegate:self
                                                     cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil
                                                     otherButtonTitles:@"Save", @"Discard", nil];
     actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
     [actionSheet showInView:self.view];
+   
+    
     if ([self.PauseRun isEnabled])
     {
         
@@ -345,7 +349,8 @@ bool Miles=false,GPSenable=false,StartRun=false;
     
     {
         [self.navigationController popToRootViewControllerAnimated:YES];
-        
+        self.PauseRun.hidden=YES;
+        self.StartRun.hidden=NO;
     }
     
     if([timer4 counting])

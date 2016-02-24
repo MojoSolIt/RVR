@@ -20,7 +20,7 @@
  
     
     
-    NSArray *distanceUnit = @[@"Miles", @"Kilo Meters"];
+    NSArray *distanceUnit = @[@"Miles", @"Kilometers"];
     self.distancePicker = [[DownPicker alloc] initWithTextField:self.distancetxtField withData:distanceUnit];
     
     NSArray *gender = @[@"Male", @"Female"];
