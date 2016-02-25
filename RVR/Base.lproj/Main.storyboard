@@ -1834,7 +1834,12 @@ Challenge Runs – Prize
         <segue reference="nL3-ce-D5A"/>
         <segue reference="Gwe-vX-U2b"/>
         <segue reference="cfL-mO-gG2"/>
+<<<<<<< HEAD
         <segue reference="Qvr-uy-sfi"/>
         <segue reference="Rz7-Vh-LG8"/>
+=======
+        <segue reference="uGg-8j-n5r"/>
+        <segue reference="KhO-YO-bao"/>
+>>>>>>> origin/Master
     </inferredMetricsTieBreakers>
 </document>
