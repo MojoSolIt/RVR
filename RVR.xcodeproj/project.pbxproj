@@ -82,10 +82,6 @@
 		829D6CEE1C62D3A3009E5FDF /* RacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 829D6CED1C62D3A3009E5FDF /* RacesViewController.m */; };
 		829D6CF01C62D66C009E5FDF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829D6CEF1C62D66C009E5FDF /* MapKit.framework */; };
 		829D6CF31C62DD5A009E5FDF /* LeadershipBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 829D6CF21C62DD5A009E5FDF /* LeadershipBoardViewController.m */; };
-		82C1FF761C7E6EA10015FA87 /* RacesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C1FF711C7E6EA10015FA87 /* RacesList.m */; };
-		82C1FF771C7E6EA10015FA87 /* RacesListCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C1FF731C7E6EA10015FA87 /* RacesListCellTableViewCell.m */; };
-		82C1FF781C7E6EA10015FA87 /* RacesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C1FF751C7E6EA10015FA87 /* RacesListViewController.m */; };
-		82C1FF7A1C7E72340015FA87 /* homeicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1FF791C7E72340015FA87 /* homeicon@2x.png */; };
 		82C236A51C76913800F6F237 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C236801C76913800F6F237 /* AFHTTPSessionManager.m */; };
 		82C236A61C76913800F6F237 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C236831C76913800F6F237 /* AFNetworkReachabilityManager.m */; };
 		82C236A71C76913800F6F237 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C236851C76913800F6F237 /* AFSecurityPolicy.m */; };
@@ -244,13 +240,6 @@
 		829D6CEF1C62D66C009E5FDF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		829D6CF11C62DD5A009E5FDF /* LeadershipBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeadershipBoardViewController.h; sourceTree = "<group>"; };
 		829D6CF21C62DD5A009E5FDF /* LeadershipBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeadershipBoardViewController.m; sourceTree = "<group>"; };
-		82C1FF701C7E6EA10015FA87 /* RacesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RacesList.h; sourceTree = "<group>"; };
-		82C1FF711C7E6EA10015FA87 /* RacesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RacesList.m; sourceTree = "<group>"; };
-		82C1FF721C7E6EA10015FA87 /* RacesListCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RacesListCellTableViewCell.h; sourceTree = "<group>"; };
-		82C1FF731C7E6EA10015FA87 /* RacesListCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RacesListCellTableViewCell.m; sourceTree = "<group>"; };
-		82C1FF741C7E6EA10015FA87 /* RacesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RacesListViewController.h; sourceTree = "<group>"; };
-		82C1FF751C7E6EA10015FA87 /* RacesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RacesListViewController.m; sourceTree = "<group>"; };
-		82C1FF791C7E72340015FA87 /* homeicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homeicon@2x.png"; sourceTree = "<group>"; };
 		82C2367F1C76913800F6F237 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		82C236801C76913800F6F237 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		82C236811C76913800F6F237 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
@@ -441,7 +430,6 @@
 		829D6C6D1C62B752009E5FDF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				82C1FF791C7E72340015FA87 /* homeicon@2x.png */,
 				A81B558C1C7E1C4F0084677E /* skip1.png */,
 				A81B558D1C7E1C4F0084677E /* skip2.png */,
 				829D6C6E1C62B764009E5FDF /* 01.jpg */,
@@ -620,12 +608,6 @@
 		82D18BC31C6D5273006BDB41 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				82C1FF701C7E6EA10015FA87 /* RacesList.h */,
-				82C1FF711C7E6EA10015FA87 /* RacesList.m */,
-				82C1FF721C7E6EA10015FA87 /* RacesListCellTableViewCell.h */,
-				82C1FF731C7E6EA10015FA87 /* RacesListCellTableViewCell.m */,
-				82C1FF741C7E6EA10015FA87 /* RacesListViewController.h */,
-				82C1FF751C7E6EA10015FA87 /* RacesListViewController.m */,
 				829D6CE01C62BBC0009E5FDF /* HomeViewController.h */,
 				829D6CE11C62BBC0009E5FDF /* HomeViewController.m */,
 				824FBE1B1C65766D008D3AF4 /* ActivityViewController.h */,
@@ -843,7 +825,6 @@
 				829D6CC71C62B764009E5FDF /* helvetica-neue-bold.ttf in Resources */,
 				829D6CD91C62B764009E5FDF /* logo_login.png in Resources */,
 				829D6CBF1C62B764009E5FDF /* btn_privacy.png in Resources */,
-				82C1FF7A1C7E72340015FA87 /* homeicon@2x.png in Resources */,
 				829D6CCA1C62B764009E5FDF /* icon_activity@2x.png in Resources */,
 				829D6CB11C62B764009E5FDF /* 10.jpg in Resources */,
 				829D6CC91C62B764009E5FDF /* icon_activity_profile.png in Resources */,
@@ -889,11 +870,9 @@
 				82C236B11C76913800F6F237 /* UIImageView+AFNetworking.m in Sources */,
 				82D4D7741C653AE600547057 /* SettingsTableViewController.m in Sources */,
 				A81B559F1C7E291F0084677E /* UIDownPicker.m in Sources */,
-				82C1FF761C7E6EA10015FA87 /* RacesList.m in Sources */,
 				82D18B861C6CF3FC006BDB41 /* MZTimerLabel.m in Sources */,
 				82D9CA771C6E77B3004AF07C /* RVR.xcdatamodeld in Sources */,
 				82D9CA691C6E42E7004AF07C /* BadgeEarnedStatus.m in Sources */,
-				82C1FF771C7E6EA10015FA87 /* RacesListCellTableViewCell.m in Sources */,
 				82D4D7771C654F0F00547057 /* BasicInfoViewController.m in Sources */,
 				82D9CA671C6E42E7004AF07C /* BadgeAnnotation.m in Sources */,
 				829D6CF31C62DD5A009E5FDF /* LeadershipBoardViewController.m in Sources */,
@@ -914,7 +893,6 @@
 				82C236A71C76913800F6F237 /* AFSecurityPolicy.m in Sources */,
 				82C236AC1C76913800F6F237 /* AFAutoPurgingImageCache.m in Sources */,
 				82C236B21C76913800F6F237 /* UIProgressView+AFNetworking.m in Sources */,
-				82C1FF781C7E6EA10015FA87 /* RacesListViewController.m in Sources */,
 				829D6CE51C62C930009E5FDF /* PrivacyViewController.m in Sources */,
 				829D6CE21C62BBC0009E5FDF /* HomeViewController.m in Sources */,
 				82C236A61C76913800F6F237 /* AFNetworkReachabilityManager.m in Sources */,
