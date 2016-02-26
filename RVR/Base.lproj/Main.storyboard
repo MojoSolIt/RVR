@@ -28,6 +28,10 @@
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
         </mutableArray>
         <mutableArray key="HelveticaNeueLights.ttc">
             <string>HelveticaNeue-Light</string>
@@ -561,7 +565,6 @@
                         <outlet property="Time" destination="75s-C0-VJ0" id="ULb-vT-ZMF"/>
                         <outlet property="mapView" destination="po5-4R-ecr" id="VfE-mK-0Nw"/>
                         <outlet property="sidebarButton" destination="30p-NB-Yzw" id="8uH-x1-JSO"/>
-                        <segue destination="VjR-Ua-iUQ" kind="push" identifier="RunDetails" id="JCt-hs-HEj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D8o-e4-HPQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -637,7 +640,7 @@
                                 <rect key="frame" x="0.0" y="-40" width="339" height="568"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4vY-J5-7gi">
-                                <rect key="frame" x="0.0" y="130" width="320" height="61"/>
+                                <rect key="frame" x="0.0" y="132" width="320" height="61"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yy-nJ-cC4">
                                         <rect key="frame" x="59" y="33" width="64" height="17"/>
@@ -658,7 +661,7 @@
                                 <color key="backgroundColor" red="0.2274509804" green="0.25098039220000001" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JfU-z3-SfY">
-                                <rect key="frame" x="0.0" y="192" width="320" height="61"/>
+                                <rect key="frame" x="0.0" y="195" width="320" height="61"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prizes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5da-2s-jhz">
                                         <rect key="frame" x="59" y="15" width="112" height="13"/>
@@ -824,6 +827,7 @@
                         <outlet property="dateLabel" destination="r2c-0e-pjD" id="C7s-CR-1yC"/>
                         <outlet property="distanceLabel" destination="wsT-jW-R2Q" id="ESQ-d3-HoM"/>
                         <outlet property="paceLabel" destination="wv4-dG-myj" id="q42-29-609"/>
+                        <outlet property="sidebarButton" destination="VaJ-5I-UN6" id="DWt-EM-5GC"/>
                         <outlet property="timeLabel" destination="heC-5h-5aO" id="on6-p2-0Hn"/>
                     </connections>
                 </viewController>
@@ -898,7 +902,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFZ-p2-cML" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2317" y="-970"/>
+            <point key="canvasLocation" x="3941" y="-970"/>
         </scene>
         <!--BASIC INFO-->
         <scene sceneID="JkE-Zq-PbR">
@@ -1055,29 +1059,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" cocoaTouchSystemColor="darkTextColor"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="name" rowHeight="85" id="8gp-QD-Cs7">
-                                <rect key="frame" x="0.0" y="92" width="320" height="85"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="name" rowHeight="89" id="8gp-QD-Cs7">
+                                <rect key="frame" x="0.0" y="92" width="320" height="89"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8gp-QD-Cs7" id="3tc-WT-xh1">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="profile" rowHeight="70" id="JE1-bg-gJy">
-                                <rect key="frame" x="0.0" y="177" width="320" height="70"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="races" rowHeight="74" id="JE1-bg-gJy">
+                                <rect key="frame" x="0.0" y="181" width="320" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JE1-bg-gJy" id="dNb-di-lek">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="e6b-Df-zvI">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_races.png" translatesAutoresizingMaskIntoConstraints="NO" id="e6b-Df-zvI">
                                             <rect key="frame" x="16" y="21" width="28" height="27"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QU-zZ-sC9">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Races" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QU-zZ-sC9">
                                             <rect key="frame" x="82" y="20" width="151" height="28"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.94562308868501532" green="0.76627414442507635" blue="0.13311114296636087" alpha="1" colorSpace="calibratedRGB"/>
@@ -1086,14 +1091,36 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Xqk-da-Tib" kind="custom" identifier="show" customClass="SWRevealViewControllerSeguePushController" id="XW6-y2-1uj"/>
+                                    <segue destination="1Vh-P4-l4y" kind="custom" identifier="show" customClass="SWRevealViewControllerSeguePushController" id="fde-fO-c0Z"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="settings" rowHeight="70" id="Y11-tE-4cY">
-                                <rect key="frame" x="0.0" y="247" width="320" height="70"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="profile" rowHeight="74" id="KeE-Df-zBX">
+                                <rect key="frame" x="0.0" y="255" width="320" height="74"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KeE-Df-zBX" id="o7M-R5-uIq">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="qwp-B6-HW0">
+                                            <rect key="frame" x="16" y="21" width="28" height="27"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmH-bL-Txi">
+                                            <rect key="frame" x="82" y="20" width="151" height="28"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.9456230887" green="0.76627414439999997" blue="0.13311114299999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="YpK-bt-lpT" kind="custom" identifier="show" customClass="SWRevealViewControllerSeguePushController" id="cgy-Xp-rSz"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="settings" rowHeight="74" id="Y11-tE-4cY">
+                                <rect key="frame" x="0.0" y="329" width="320" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y11-tE-4cY" id="bU9-ay-jP4">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_settings.png" translatesAutoresizingMaskIntoConstraints="NO" id="cHc-Gz-jmm">
@@ -1111,11 +1138,11 @@
                                     <segue destination="Zpa-Iv-W3a" kind="custom" identifier="show" customClass="SWRevealViewControllerSeguePushController" id="UZQ-hh-exQ"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="logout" rowHeight="70" id="o3y-Gc-wMv">
-                                <rect key="frame" x="0.0" y="317" width="320" height="70"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="logout" rowHeight="74" id="o3y-Gc-wMv">
+                                <rect key="frame" x="0.0" y="403" width="320" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o3y-Gc-wMv" id="wIJ-Dg-d3p">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_logout.png" translatesAutoresizingMaskIntoConstraints="NO" id="Csg-Gv-QeJ">
@@ -1128,28 +1155,6 @@
                                             </state>
                                             <connections>
                                                 <action selector="Logout:" destination="nFC-Ht-3UH" eventType="touchUpInside" id="OPN-uB-hVq"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="races" rowHeight="70" id="4pk-Fd-aM9">
-                                <rect key="frame" x="0.0" y="387" width="320" height="70"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4pk-Fd-aM9" id="hOG-Ir-qbB">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_races.png" translatesAutoresizingMaskIntoConstraints="NO" id="yMX-f5-l0a">
-                                            <rect key="frame" x="22" y="18" width="28" height="27"/>
-                                        </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nir-qG-jbi">
-                                            <rect key="frame" x="46" y="18" width="119" height="31"/>
-                                            <state key="normal" title="Races">
-                                                <color key="titleColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="Logout:" destination="nFC-Ht-3UH" eventType="touchUpInside" id="sJ7-aR-6wv"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -1297,14 +1302,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="SETTING" id="x1A-iQ-Xnd">
-                        <barButtonItem key="leftBarButtonItem" image="icon_menu.png" id="iGt-9U-G5r">
+                        <barButtonItem key="leftBarButtonItem" image="homeicon.png" id="bJf-v6-g8B">
                             <color key="tintColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="lDh-MI-vKV" kind="modal" id="5KT-aa-d0o"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="sidebarButton" destination="iGt-9U-G5r" id="q9R-5x-XvW"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DVe-kB-95d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1330,7 +1335,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="45" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebQ-p1-MAx">
                                         <rect key="frame" x="20" y="20" width="307" height="665"/>
-                                        <mutableString key="text">RUN TYPE
+                                        <string key="text">RUN TYPE
 RVR will host three different types of runs dubbed as “Milestone Runs”, “Charity Runs” and “Challenge Runs”.  
 
 Milestone runs
@@ -1358,7 +1363,7 @@ Type of Awards:
 Milestone Runs – Badges
 Charity Runs – Coins 
 Challenge Runs – Prize   
-</mutableString>
+</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" red="1" green="0.76731761710000002" blue="0.067572673479999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1508,8 +1513,11 @@ Challenge Runs – Prize
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="PROFILE" id="iDu-GC-qVT">
-                        <barButtonItem key="leftBarButtonItem" image="icon_menu.png" id="aAq-QP-l6w">
+                        <barButtonItem key="leftBarButtonItem" image="homeicon.png" id="foz-5Q-MWA">
                             <color key="tintColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="lDh-MI-vKV" kind="modal" id="ZmR-Z6-VYl"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="dummy" id="vZp-y3-tJo">
                             <connections>
@@ -1521,12 +1529,11 @@ Challenge Runs – Prize
                     <connections>
                         <outlet property="name" destination="mm6-qV-2Q2" id="QDK-64-M4w"/>
                         <outlet property="profileImage" destination="S7H-Mp-9Ws" id="jAi-lc-2sY"/>
-                        <outlet property="sidebarButton" destination="aAq-QP-l6w" id="yJy-dc-3cY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cE-z9-GU7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1943" y="-970"/>
+            <point key="canvasLocation" x="1219" y="-1820"/>
         </scene>
         <!--Termsn Conditions View Controller-->
         <scene sceneID="9zF-yC-TyU">
@@ -1659,6 +1666,11 @@ Challenge Runs – Prize
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ohi-kT-JaX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.083674362299999999" green="0.1129813021" blue="0.27097645780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1668,31 +1680,6 @@ Challenge Runs – Prize
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vyk-lF-jxB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="457" y="-1176"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="sMr-nz-XyY">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xqk-da-Tib" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i5r-mI-rqD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.067733252059999999" green="0.1098186771" blue="0.2559588639" alpha="1" colorSpace="calibratedRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="0.0"/>
-                            <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="textShadowColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="hCI-lw-kOU" kind="relationship" relationship="rootViewController" id="zRp-Hr-fxh"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GPi-6I-qWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1365" y="-1130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pec-VV-NDf">
@@ -1753,9 +1740,10 @@ Challenge Runs – Prize
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1uG-Jq-CxV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="0.14117647059999999" green="0.15686274510000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1767,6 +1755,154 @@ Challenge Runs – Prize
             </objects>
             <point key="canvasLocation" x="-2980" y="-2350"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cBn-g3-PxX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YpK-bt-lpT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5uS-dP-Yfs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.083674362299999999" green="0.1129813021" blue="0.27097645780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hCI-lw-kOU" kind="relationship" relationship="rootViewController" id="f4Q-tP-2Yc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8t2-N1-snA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="835" y="-1820"/>
+        </scene>
+        <!--RACES-->
+        <scene sceneID="5fn-oU-II0">
+            <objects>
+                <viewController id="kjP-j2-Hj0" customClass="RacesListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3A7-YO-2JE"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Ll-5y-yBL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KF3-s2-HT9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="94" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KT0-bt-xZg">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="94" id="Lvc-V3-Y8U" userLabel="RacesListCellTableViewCell" customClass="RacesListCellTableViewCell">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="94"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lvc-V3-Y8U" id="tip-m2-3oD">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Races Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUp-l3-gcv">
+                                                    <rect key="frame" x="11" y="-4" width="180" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJ1-oE-Ohf">
+                                                    <rect key="frame" x="11" y="18" width="302" height="41"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R94-0l-xRC">
+                                                    <rect key="frame" x="9" y="68" width="93" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="End date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnm-ll-qZP">
+                                                    <rect key="frame" x="91" y="68" width="91" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Days Left" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMg-2A-uE2">
+                                                    <rect key="frame" x="171" y="72" width="60" height="14"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="Description" destination="bJ1-oE-Ohf" id="Aau-yI-Ny4"/>
+                                            <outlet property="Name" destination="TUp-l3-gcv" id="ga7-Df-Ikq"/>
+                                            <outlet property="end_date" destination="bnm-ll-qZP" id="cg4-mg-XmO"/>
+                                            <outlet property="remaing_days" destination="VMg-2A-uE2" id="Oa9-aG-p2r"/>
+                                            <outlet property="start_date" destination="R94-0l-xRC" id="Evb-OK-wk4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="kjP-j2-Hj0" id="RRE-Fg-sae"/>
+                                    <outlet property="delegate" destination="kjP-j2-Hj0" id="Plp-f5-zMf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RACES" id="FP6-Hp-a6m">
+                        <barButtonItem key="leftBarButtonItem" image="homeicon.png" id="2pj-8u-Bjo">
+                            <color key="tintColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="lDh-MI-vKV" kind="modal" id="MKd-DX-yT5"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="icon_activity.png" id="fLd-p7-7jy">
+                            <color key="tintColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="VjR-Ua-iUQ" kind="show" id="txJ-UP-viu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="RaceslistTableView" destination="KT0-bt-xZg" id="KPU-9g-thc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F5L-Ot-0hy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1793" y="-1129"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ft7-Rb-MRn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Vh-P4-l4y" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6bx-XM-Osl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.083674362299999999" green="0.1129813021" blue="0.27097645780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.76862745099999996" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kjP-j2-Hj0" kind="relationship" relationship="rootViewController" id="P37-My-bLP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zhB-et-cyb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1264" y="-1075"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bg.jpg" width="750" height="1334"/>
@@ -1775,6 +1911,7 @@ Challenge Runs – Prize
         <image name="btn_privacy.png" width="313" height="84"/>
         <image name="btn_signup.png" width="675" height="76"/>
         <image name="btn_terms.png" width="313" height="84"/>
+        <image name="homeicon.png" width="22" height="22"/>
         <image name="icon_activity.png" width="21" height="17"/>
         <image name="icon_activity_profile.png" width="35" height="39"/>
         <image name="icon_badges.png" width="49" height="61"/>
@@ -1798,7 +1935,7 @@ Challenge Runs – Prize
         <image name="skip2.png" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EWk-Dv-TGC"/>
+        <segue reference="KNB-nf-c34"/>
         <segue reference="zgp-Oi-Aft"/>
         <segue reference="Gwe-vX-U2b"/>
         <segue reference="ePc-9f-ZsR"/>

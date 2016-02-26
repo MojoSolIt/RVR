@@ -33,7 +33,7 @@
                              didFinishLaunchingWithOptions:launchOptions];
     
     
-    
+//    
 //UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
 //    RacesViewController *controller = (RacesViewController *)navigationController.topViewController;
 //    controller.managedObjectContext = self.managedObjectContext;
@@ -108,17 +108,25 @@
 
 {
     // The managed object model for the application. It is a fatal error for the application not to be able to find and load its model.
-    if (_managedObjectModel != nil) {
+    if (_managedObjectModel != nil)
+    
+    {
         return _managedObjectModel;
     }
+    
     NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"RVR" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
 
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator
+
+{
     // The persistent store coordinator for the application. This implementation creates and return a coordinator, having added the store for the application to it.
-    if (_persistentStoreCoordinator != nil) {
+    
+    if (_persistentStoreCoordinator != nil)
+    
+    {
         return _persistentStoreCoordinator;
     }
     
@@ -128,9 +136,12 @@
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"RVR.sqlite"];
     NSError *error = nil;
     NSString *failureReason = @"There was an error creating or loading the application's saved data.";
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error])
+    
+    {
         // Report any error we got.
         NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+        
         dict[NSLocalizedDescriptionKey] = @"Failed to initialize the application's saved data";
         dict[NSLocalizedFailureReasonErrorKey] = failureReason;
         dict[NSUnderlyingErrorKey] = error;

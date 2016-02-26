@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82033FC41C80BFF5005EF74E /* homeicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82033FC31C80BFF5005EF74E /* homeicon@2x.png */; };
+		82033FCD1C80C285005EF74E /* RacesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 82033FC71C80C285005EF74E /* RacesList.m */; };
+		82033FCE1C80C285005EF74E /* RacesListCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82033FC91C80C285005EF74E /* RacesListCellTableViewCell.m */; };
+		82033FCF1C80C285005EF74E /* RacesListCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82033FCA1C80C285005EF74E /* RacesListCellTableViewCell.xib */; };
+		82033FD01C80C285005EF74E /* RacesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82033FCC1C80C285005EF74E /* RacesListViewController.m */; };
+		82033FD41C81131E005EF74E /* AppIcon in Resources */ = {isa = PBXBuildFile; fileRef = 82033FD31C81131E005EF74E /* AppIcon */; };
 		824FBE1D1C65766D008D3AF4 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824FBE1C1C65766D008D3AF4 /* ActivityViewController.m */; };
 		824FBE1F1C657D0D008D3AF4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 824FBE1E1C657D0D008D3AF4 /* Social.framework */; };
 		829D6B7C1C62AD51009E5FDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 829D6B7B1C62AD51009E5FDF /* main.m */; };
@@ -150,6 +156,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		82033FC31C80BFF5005EF74E /* homeicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "homeicon@2x.png"; path = "RVR/Images/homeicon@2x.png"; sourceTree = "<group>"; };
+		82033FC61C80C285005EF74E /* RacesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RacesList.h; sourceTree = "<group>"; };
+		82033FC71C80C285005EF74E /* RacesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RacesList.m; sourceTree = "<group>"; };
+		82033FC81C80C285005EF74E /* RacesListCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RacesListCellTableViewCell.h; sourceTree = "<group>"; };
+		82033FC91C80C285005EF74E /* RacesListCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RacesListCellTableViewCell.m; sourceTree = "<group>"; };
+		82033FCA1C80C285005EF74E /* RacesListCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RacesListCellTableViewCell.xib; sourceTree = "<group>"; };
+		82033FCB1C80C285005EF74E /* RacesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RacesListViewController.h; sourceTree = "<group>"; };
+		82033FCC1C80C285005EF74E /* RacesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RacesListViewController.m; sourceTree = "<group>"; };
+		82033FD31C81131E005EF74E /* AppIcon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon; sourceTree = "<group>"; };
 		824FBE1B1C65766D008D3AF4 /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
 		824FBE1C1C65766D008D3AF4 /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
 		824FBE1E1C657D0D008D3AF4 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -363,9 +378,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82033FC51C80C263005EF74E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				82033FC61C80C285005EF74E /* RacesList.h */,
+				82033FC71C80C285005EF74E /* RacesList.m */,
+				82033FC81C80C285005EF74E /* RacesListCellTableViewCell.h */,
+				82033FC91C80C285005EF74E /* RacesListCellTableViewCell.m */,
+				82033FCA1C80C285005EF74E /* RacesListCellTableViewCell.xib */,
+				82033FCB1C80C285005EF74E /* RacesListViewController.h */,
+				82033FCC1C80C285005EF74E /* RacesListViewController.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		829D6B6E1C62AD51009E5FDF = {
 			isa = PBXGroup;
 			children = (
+				82033FC51C80C263005EF74E /* Cell */,
 				82D18B871C6CFEA1006BDB41 /* Runner */,
 				82D18B831C6CF3E5006BDB41 /* Timmer */,
 				82C5DD671C6BC2A4009007A8 /* FramWorks */,
@@ -433,6 +463,8 @@
 		829D6C6D1C62B752009E5FDF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				82033FD31C81131E005EF74E /* AppIcon */,
+				82033FC31C80BFF5005EF74E /* homeicon@2x.png */,
 				A81B558C1C7E1C4F0084677E /* skip1.png */,
 				A81B558D1C7E1C4F0084677E /* skip2.png */,
 				829D6C6E1C62B764009E5FDF /* 01.jpg */,
@@ -781,6 +813,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				829D6CD11C62B764009E5FDF /* icon_profile.png in Resources */,
+				82033FCF1C80C285005EF74E /* RacesListCellTableViewCell.xib in Resources */,
 				829D6CC41C62B764009E5FDF /* divider_line.png in Resources */,
 				829D6CB51C62B764009E5FDF /* 14.jpg in Resources */,
 				829D6CD21C62B764009E5FDF /* icon_races@2x.png in Resources */,
@@ -816,6 +849,7 @@
 				829D6CA81C62B764009E5FDF /* 02.jpg in Resources */,
 				829D6CAC1C62B764009E5FDF /* 05.jpg in Resources */,
 				829D6CBB1C62B764009E5FDF /* btn_login.png in Resources */,
+				82033FD41C81131E005EF74E /* AppIcon in Resources */,
 				829D6CB71C62B764009E5FDF /* bg.jpg in Resources */,
 				829D6CB31C62B764009E5FDF /* 12.jpg in Resources */,
 				A81B559B1C7E291F0084677E /* downArrow@2x.png in Resources */,
@@ -830,6 +864,7 @@
 				829D6CC71C62B764009E5FDF /* helvetica-neue-bold.ttf in Resources */,
 				829D6CD91C62B764009E5FDF /* logo_login.png in Resources */,
 				829D6CBF1C62B764009E5FDF /* btn_privacy.png in Resources */,
+				82033FC41C80BFF5005EF74E /* homeicon@2x.png in Resources */,
 				829D6CCA1C62B764009E5FDF /* icon_activity@2x.png in Resources */,
 				829D6CB11C62B764009E5FDF /* 10.jpg in Resources */,
 				829D6CC91C62B764009E5FDF /* icon_activity_profile.png in Resources */,
@@ -882,6 +917,7 @@
 				82D9CA671C6E42E7004AF07C /* BadgeAnnotation.m in Sources */,
 				829D6CF31C62DD5A009E5FDF /* LeadershipBoardViewController.m in Sources */,
 				82C236AE1C76913800F6F237 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				82033FD01C80C285005EF74E /* RacesListViewController.m in Sources */,
 				82D4D76A1C650A4E00547057 /* sidebarViewController.m in Sources */,
 				82C236B01C76913800F6F237 /* UIButton+AFNetworking.m in Sources */,
 				829D6CE81C62C94C009E5FDF /* TermsnConditionsViewController.m in Sources */,
@@ -907,11 +943,13 @@
 				829D6CEE1C62D3A3009E5FDF /* RacesViewController.m in Sources */,
 				82D9CA6C1C6E42E7004AF07C /* MathController.m in Sources */,
 				82D4D76E1C65158B00547057 /* ProfileViewController.m in Sources */,
+				82033FCE1C80C285005EF74E /* RacesListCellTableViewCell.m in Sources */,
 				829D6CEB1C62D36B009E5FDF /* TrophyViewController.m in Sources */,
 				829D6C0C1C62ADF8009E5FDF /* SigninViewController.m in Sources */,
 				82D9CA6A1C6E42E7004AF07C /* BadgeTableViewCell.m in Sources */,
 				A82B91A81C7FBAED0049A5E2 /* JoinRaceViewController.m in Sources */,
 				82D4D76B1C650A4E00547057 /* SWRevealViewController.m in Sources */,
+				82033FCD1C80C285005EF74E /* RacesList.m in Sources */,
 				82C236AD1C76913800F6F237 /* AFImageDownloader.m in Sources */,
 				82C236B41C76913800F6F237 /* UIWebView+AFNetworking.m in Sources */,
 				82C236A91C76913800F6F237 /* AFURLResponseSerialization.m in Sources */,
