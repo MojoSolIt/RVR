@@ -11,6 +11,8 @@
 
 @interface ProfileViewController ()
 
+@property(weak,nonatomic)NSString *profileImageUrl;
+
 @end
 
 @implementation ProfileViewController
@@ -34,7 +36,8 @@
     }
     
     NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
-    
+    NSUserDefaults *preferencesImage = [NSUserDefaults standardUserDefaults];
+    self.profileImageUrl = [preferencesImage stringForKey:@"picture"];
     NSString *currentLevelKey = @"currentlevel";
     
     if ([preferences objectForKey:currentLevelKey] == nil)
@@ -52,6 +55,29 @@
         name.text = currentLevel;
     }
 
+    
+
+    
+    
+    
+    NSURL *url = [NSURL URLWithString:self.profileImageUrl];
+    
+    NSData *data = [NSMutableData dataWithContentsOfURL:url];
+    UIImage *image = [UIImage imageWithData:data];
+    
+    
+    
+    self.profileImage.layer.cornerRadius = self.profileImage.frame.size.width / 2;
+    self.profileImage.clipsToBounds = YES;
+    self.profileImage.layer.borderWidth = 1.0f;
+    self.profileImage.layer.cornerRadius = 30.0f;
+    self.profileImage.layer.borderColor = [UIColor whiteColor].CGColor;
+    
+    self.profileImage.image = image;
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

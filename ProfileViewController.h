@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @property (weak,nonatomic)IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UIImageView *profileImage;
 
 
 @end

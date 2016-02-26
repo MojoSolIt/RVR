@@ -99,21 +99,9 @@
         self.userName = [prefrecense  stringForKey:@"name"];
   
         cell.textLabel.text = @"Full Name";
+        
         cell.detailTextLabel.text = self.userName;
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
     }
     return cell;

@@ -129,6 +129,7 @@
 		A81B559D1C7E291F0084677E /* DownPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A81B55951C7E291F0084677E /* DownPicker.m */; };
 		A81B559E1C7E291F0084677E /* DownPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A81B55971C7E291F0084677E /* DownPickerViewController.m */; };
 		A81B559F1C7E291F0084677E /* UIDownPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A81B55991C7E291F0084677E /* UIDownPicker.m */; };
+		A82B91A81C7FBAED0049A5E2 /* JoinRaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82B91A71C7FBAED0049A5E2 /* JoinRaceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -325,6 +326,8 @@
 		A81B55971C7E291F0084677E /* DownPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DownPickerViewController.m; path = Picker/DownPickerViewController.m; sourceTree = "<group>"; };
 		A81B55981C7E291F0084677E /* UIDownPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIDownPicker.h; path = Picker/UIDownPicker.h; sourceTree = "<group>"; };
 		A81B55991C7E291F0084677E /* UIDownPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIDownPicker.m; path = Picker/UIDownPicker.m; sourceTree = "<group>"; };
+		A82B91A61C7FBAED0049A5E2 /* JoinRaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinRaceViewController.h; sourceTree = "<group>"; };
+		A82B91A71C7FBAED0049A5E2 /* JoinRaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoinRaceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -608,6 +611,8 @@
 		82D18BC31C6D5273006BDB41 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A82B91A61C7FBAED0049A5E2 /* JoinRaceViewController.h */,
+				A82B91A71C7FBAED0049A5E2 /* JoinRaceViewController.m */,
 				829D6CE01C62BBC0009E5FDF /* HomeViewController.h */,
 				829D6CE11C62BBC0009E5FDF /* HomeViewController.m */,
 				824FBE1B1C65766D008D3AF4 /* ActivityViewController.h */,
@@ -905,6 +910,7 @@
 				829D6CEB1C62D36B009E5FDF /* TrophyViewController.m in Sources */,
 				829D6C0C1C62ADF8009E5FDF /* SigninViewController.m in Sources */,
 				82D9CA6A1C6E42E7004AF07C /* BadgeTableViewCell.m in Sources */,
+				A82B91A81C7FBAED0049A5E2 /* JoinRaceViewController.m in Sources */,
 				82D4D76B1C650A4E00547057 /* SWRevealViewController.m in Sources */,
 				82C236AD1C76913800F6F237 /* AFImageDownloader.m in Sources */,
 				82C236B41C76913800F6F237 /* UIWebView+AFNetworking.m in Sources */,

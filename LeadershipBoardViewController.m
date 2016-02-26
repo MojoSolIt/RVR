@@ -33,6 +33,10 @@
     
     UITabBarController *tabBarController = (UITabBarController *)self.tabBarController;
     [tabBarController.tabBar setTintColor:[UIColor whiteColor]];
+    
+    
+
+    
 }
 
 - (void)didReceiveMemoryWarning {

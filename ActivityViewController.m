@@ -31,7 +31,7 @@
     [super viewDidLoad];
     
     
-    self.title=@"Activity";
+    self.title=@"ACTIVITY";
     
     [self configureView];
     
