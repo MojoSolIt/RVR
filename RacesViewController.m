@@ -21,7 +21,7 @@
 #import "ActivityViewController.h"
 
 
-
+static NSString * const detailSegueName = @"RunDetails";
 
 @interface RacesViewController () <CLLocationManagerDelegate,UIActionSheetDelegate,MKMapViewDelegate>
 
@@ -47,9 +47,7 @@ bool Miles=false,GPSenable=false,StartRun=false;
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    
-    self.StartRun.hidden=NO;
+        self.StartRun.hidden=NO;
     self.PauseRun.hidden=YES;
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
@@ -88,8 +86,7 @@ bool Miles=false,GPSenable=false,StartRun=false;
         // This is iOS 7 case.
         [self.locationManager startUpdatingLocation];
     }
-    
- //  [self loadMap];
+
     
     
     SWRevealViewController *revealViewController = self.revealViewController;
@@ -345,7 +342,7 @@ bool Miles=false,GPSenable=false,StartRun=false;
     
     {
         [self saveRun];
-        [self loadMap];
+        [self performSegueWithIdentifier:detailSegueName sender:nil];
         
         // discard
     } else if (buttonIndex == 1)

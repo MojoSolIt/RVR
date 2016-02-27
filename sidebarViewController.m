@@ -37,7 +37,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    menuItems = @[@"name",@"races",@"profile",@"settings",@"logout"];
+    menuItems = @[@"name",@"profile",@"settings",@"logout",@"races"];
     
     UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg.jpg"]];
     [tempImageView setFrame:self.tableView.frame];
